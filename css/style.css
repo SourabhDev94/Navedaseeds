@@ -1250,7 +1250,7 @@ a:focus {
 
 .homepage .service_section .box .img-box:hover img.second-image {
   opacity: 1;
-  transform: scale(1.1); /* Adjust scale effect as needed */
+  transform: scale(1.1); /* Adjust scale effect as needed */   
 }
 
 
@@ -1261,7 +1261,7 @@ a:focus {
 }
 
 .track_section .track_bg_box::before{
- background:linear-gradient(to right, rgba(37, 37, 37, 0.3), rgba(37, 37, 37, 0.3))
+ background:linear-gradient(to right, rgba(37, 37, 37, 0.3), rgba(37, 37, 37, 0.3));
 }
 
 .track_section h2{
