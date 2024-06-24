@@ -555,7 +555,7 @@ a:focus {
   top: 50%;
   width: 45px;
   height: 70%;
-  background-color: #04233b;
+  background-color: var(--primary-color);
   z-index: 3;
 }
 
@@ -1095,10 +1095,10 @@ a:focus {
 /* overlay text on hero image */
 .service_section .image-container .overlay-text{
   color:white;
-  font-size:90px;
+  font-size:86px;
   text-align:center;
   position:absolute;
-  bottom:35%;
+  bottom:30%;
   line-height:100px;
 }
 
@@ -1217,7 +1217,7 @@ a:focus {
   }
 
 
-  /* --------homepage ------------- */
+  /* ===========--------homepage -------------========= */
 
 
 .hero_section .image {
@@ -1225,5 +1225,51 @@ a:focus {
   width: 100%;
   height: 100%;
   /* display: none; */
+
 }
+
+/* ---image hover in homepage----- */
+
+.homepage .service_section .box .img-box img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  filter:brightness(0.8); 
+}
+
+
+.homepage .service_section .box .img-box img.second-image {
+  opacity: 0;
+  transform: scale(1);
+}
+
+.homepage .service_section .box .img-box:hover img.first-image {
+  opacity: 0;
+}
+
+.homepage .service_section .box .img-box:hover img.second-image {
+  opacity: 1;
+  transform: scale(1.1); /* Adjust scale effect as needed */
+}
+
+
+/* -------homepage_end image css----- */
+.track_section{
+  padding:150px 0;
+  margin-bottom:80px;
+}
+
+.track_section .track_bg_box::before{
+ background:linear-gradient(to right, rgba(37, 37, 37, 0.3), rgba(37, 37, 37, 0.3))
+}
+
+.track_section h2{
+  font-size:70px;
+  font-weight:500;
+  line-height:4.5rem;
+  text-align:center;
+}
+
+
 
