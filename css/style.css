@@ -518,14 +518,13 @@ a:focus {
 
 .service_section .box .detail-box p {
   color:#000;
-  font-weight:500;
-  font-size:15px;
+  font-size:14px;
 }
 
 .service_section .box .detail-box p span {
   color:#116142;
   font-weight:600;
-  font-size:15px;
+  font-size:14px;
 
 }
 
@@ -576,6 +575,9 @@ a:focus {
 .about_section .detail-box p {
   color: #1f1f1f;
   margin-top: 15px;
+  text-align:justify;
+  padding-right:20px;
+  letter-spacing: 0.8px;
 }
 
 .about_section .detail-box a {
@@ -591,7 +593,7 @@ a:focus {
 }
 
 .about_section .detail-box a:hover {
-  background-color: #065968;
+  background-color: var(--secondary-color);
 }
 
 .track_section {
@@ -872,7 +874,7 @@ a:focus {
 }
 
 .info_section {
-  background-color: #04233b;
+  background-color: var(--secondary-color);
   color: #ffffff;
   padding: 45px 0 15px 0;
 }
@@ -915,6 +917,7 @@ a:focus {
   display: flex;
   margin-top: 20px;
   margin-bottom: 10px;
+  gap:5px;
 }
 
 .info_section .info_social a {
@@ -1011,7 +1014,7 @@ a:focus {
 /* footer section*/
 .footer_section {
   position: relative;
-  background-color: #ffffff;
+  background-color: var(--primary-color);
   text-align: center;
 }
 
@@ -1019,6 +1022,7 @@ a:focus {
   color: #04233b;
   padding: 25px 0;
   margin: 0;
+  font-weight:500;
 }
 
 .footer_section p a {
@@ -1164,46 +1168,6 @@ a:focus {
 }
 
 
-
-
-@media screen and (max-width:430px){
-    
-  /* overlay text on hero image */
-  .service_section .image-container .overlay-text{
-      font-size:35px;
-      bottom:20%;
-      line-height:40px;
-  }
-       
-      .service_section .box {
-          flex-direction: row;
-      }
-      
-  /*     image box width */
-       .service_section .box .img-box {
-          margin: 0px;
-           flex:1 0 40%;
-           border-radius:5px 0px 0px 5px;
-      }
-      
-  /*   image border radius */
-      .service_section .box .img-box img{
-           border-radius:5px 0px 0px 5px;
-      }
-      
-      
-  /*   detail box inner padding/space   */
-       .service_section .box .detail-box {
-         padding:20px 10px 10px 20px
-      }
-   
-  /*   detail box font size   */
-      .service_section .box .detail-box p {
-         font-size:12px;
-  }
-  
-  }
-  
   
 
 @media (max-width:767px){
@@ -1230,7 +1194,7 @@ a:focus {
 
 /* ---image hover in homepage----- */
 
-.homepage .service_section .box .img-box img{
+:is(.homepage,.product) .service_section .box .img-box img{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1239,16 +1203,16 @@ a:focus {
 }
 
 
-.homepage .service_section .box .img-box img.second-image {
+:is(.homepage,.product) .service_section .box .img-box img.second-image {
   opacity: 0;
   transform: scale(1);
 }
 
-.homepage .service_section .box .img-box:hover img.first-image {
+:is(.homepage,.product) .service_section .box .img-box:hover img.first-image {
   opacity: 0;
 }
 
-.homepage .service_section .box .img-box:hover img.second-image {
+:is(.homepage,.product) .service_section .box .img-box:hover img.second-image {
   opacity: 1;
   transform: scale(1.1); /* Adjust scale effect as needed */   
 }
@@ -1271,5 +1235,141 @@ a:focus {
   text-align:center;
 }
 
+/* --------------about page css------------ */
 
+ /* overlay text on hero image */
+ .about .service_section .image-container .overlay-text{
+  bottom:20%;
+  padding:0px 20px;
+}
+
+
+
+
+/* -------Footer section-------- */
+
+.info_section .widget-1 h2.heading{
+  font-weight:700;
+  font-size:40px;
+  margin-top:15px;
+  margin-bottom:0px
+}
+
+.info_section .widget-1 .sub-heading{
+  font-size:11px;
+  letter-spacing:2px
+}
+
+.info_section .widget-1 {
+  text-align:center;
+  transform:translatex(-40px);
+}
+
+.info_section .widget-2 p {
+  font-weight:300;
+  font-size:15px
+}
+
+.info_section .widget-4 .info_social a i {
+ padding: 8px 11px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2); font-weight:300;
+
+}
+
+
+
+
+
+
+
+
+/* ===================================================== */
+/* ================== Mobile Responsive Design =========== */
+
+@media (max-width:480px){
+   
+   /* overlay text on hero image */
+   .service_section .image-container .overlay-text{
+    font-size:35px;
+    bottom:20%;
+    line-height:40px;
+}
+
+ /* overlay text on hero image for about pagee */
+ .about .service_section .image-container .overlay-text{
+      bottom:10%;
+}
+     
+    .service_section .box {
+        flex-direction: row;
+    }
+    
+/*     image box width */
+     .service_section .box .img-box {
+        margin: 0px;
+         flex:1 0 40%;
+         border-radius:5px 0px 0px 5px;
+    }
+    
+/*   image border radius */
+    .service_section .box .img-box img{
+         border-radius:5px 0px 0px 5px;
+    }
+    
+    
+/*   detail box inner padding/space   */
+     .service_section .box .detail-box {
+       padding:20px 10px 10px 20px
+    }
+ 
+/*   detail box font size   */
+    .service_section .box .detail-box p {
+       font-size:12px;
+}
+
+
+
+
+
+
+    
+  /*     homepage > about */
+      .about_section .detail-box p {
+         font-size:13px;
+      }
+      
+   
+  /*    homepage > end-image */
+       .track_section {
+          padding:60px 0px;
+          margin-bottom:50px;
+      }
+      
+      .track_section h2{
+          font-size:35px;
+          line-height:2.5rem;
+      } 
+      
+      .track_section img{
+         max-width:100%;
+          
+      }
+     .track_section .track_bg_box::before {
+      background: linear-gradient(to right, rgba(37, 37, 37, 0.5),rgba(37, 37, 37, 0.5));
+  }
+      
+      
+  /* -----Footer Section - - - */
+      .info_section .widget-1{
+          transform:translatex(0);
+      }
+      
+      .info_section .widget-2{
+          text-align:center;
+      }
+  }
+  
+  
+  
 
