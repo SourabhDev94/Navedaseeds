@@ -90,20 +90,20 @@ $(document).ready(function() {
     var currentImage = 0;
     var duration = 3000; // 3 seconds
   
+    // Show the first image initially
+    $(images[currentImage]).fadeIn(0);
+  
     function showNextImage() {
-      $(images[currentImage]).fadeIn(0, function() {
-        setTimeout(function() {
-          $(images[currentImage]).fadeOut(0, function() {
-            currentImage = (currentImage + 1) % images.length;
-            showNextImage();
-          });
-        }, duration);
+      $(images[currentImage]).fadeOut(0, function() {
+        currentImage = (currentImage + 1) % images.length;
+        $(images[currentImage]).fadeIn(0, function() {
+          setTimeout(showNextImage, duration);
+        });
       });
     }
   
-    showNextImage();
+    setTimeout(showNextImage, duration);
   });
-
 
 
 

@@ -1083,11 +1083,11 @@ a:focus {
 
 @media (min-width:1024px){
   .service_section.layout_padding .image-container img{
-   height:500px;
+   height:700px;
    }
 
    .hero_section.layout_padding .image-container {
-    height:500px;
+    height:700px;
     }
 }
 
@@ -1165,6 +1165,10 @@ a:focus {
   display:none;
 
 
+}
+
+.hero-section .image {
+  display: none; /* add this rule to hide all images initially */
 }
 
 
@@ -1328,8 +1332,18 @@ a:focus {
        font-size:12px;
 }
 
+  .service_section.layout_padding .image-container img{
+    height:400px;
+    }
 
+    .hero_section.layout_padding .image-container {
+    height:400px;
+    }
 
+    /* homepage > introduction */
+    .service_section .heading_container :is(p,span) {
+      font-size:14px;
+    }
 
 
 
@@ -1359,6 +1373,10 @@ a:focus {
       background: linear-gradient(to right, rgba(37, 37, 37, 0.5),rgba(37, 37, 37, 0.5));
   }
       
+
+
+
+
       
   /* -----Footer Section - - - */
       .info_section .widget-1{
@@ -1367,9 +1385,260 @@ a:focus {
       
       .info_section .widget-2{
           text-align:center;
+          padding-left:30px;
+          padding-right:30px;
       }
   }
   
   
+ /* ===========================About page ===============================================  */
+ /* about > why choose & value section  */
+
+:is(.value-section,.why-choose-section) .heading_container h2 {
+  align-self: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+:is(.value-section,.why-choose-section) h3 {
+  align-self: center;
+  font-size: 40px;
+  margin-top: 50px;
+  width: 50%;
+  font-weight: 600;
+}
+
+:is(.value-section,.why-choose-section) p {
+  width: 50%;
+
+}
+
+.value-section { 
+ padding-bottom:0px;
+}
+
+
+.value-section h3 { 
+  width: 100%
+}
+
+.value-section p {
+  width:100%;
+}
+
+.value-section .right-block img{
+  width:60%;
   
+}
+
+.value-section .right-block {
+  width:70%;
+  text-align:right;
+  display:flex;
+  flex-direction:column;
+  gap:100px;
+}
+
+
+
+.value-section .right-block .before-box{
+  width:200px;
+  height:200px;
+  background-color:#ffb64d;
+  float:left;
+  transform:translate(178px,-37px);
+}
+
+.value-section .right-block img{
+  position:relative;
+  z-index:10;
+}
+
+.value-section .right-block .after-box{
+  width:200px;
+  height:200px;
+  background-color:#ffb64d;
+  float:right;
+  transform:translate(42px,-161px);
+}
+
+
+/* center image section */
+
+.image-section {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(image/about/about_end.png);
+  
+}
+
+.image-section .section-1 .col-md-6 h3 {
+  color: white;
+  font-size: 65px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.image-section .section-1 .col-md-6 p{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+
+/* end-section */
+section.end-section{
+  text-align:center;
+  padding-bottom:50px;
+}
+
+.end-section h2{
+  font-size:100px;
+  font-weight:700;
+  letter-spacing:3px;
+  margin-top:30px;
+}
+.end-section >p{
+  font-size:30px;
+  margin-top:-20px;
+}
+
+.end-section h3{
+  font-size:42px;
+  font-weight:600;
+  text-transform:uppercase;
+  margin-bottom:50px;
+}
+
+.end-section .image-container{
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(image/about/about_end.png);
+  
+  display:flex;
+  flex-wrap:wrap;
+  padding:80px 0px;
+  gap:10px;
+
+}
+
+.end-section .image-container p{
+  color:white;
+  font-size:30px;
+  font-weight:500;
+  flex:1 0 45%;
+}
+
+.end-section .image-container p::before{
+content:"\2600";
+  padding-right:20px;
+}
+
+
+
+
+
+/* --------------about page mobile view ---------- */
+
+@media (max-width:480px){
+  
+/* about > why choose & value section  */
+
+:is(.value-section,.why-choose-section) .heading_container h2 {
+  font-size: 35px;
+  text-align:center;
+  margin-bottom: 2px;
+}
+
+:is(.value-section,.why-choose-section) h3 {
+
+  font-size: 30px;
+  margin-top: 40px;
+  width: 100%;
+  text-align:center;
+}
+
+:is(.value-section,.why-choose-section) p {
+  width: 100%;
+  text-align:center;
+
+}
+
+.value-section { 
+ padding-bottom:0px;
+}
+
+
+
+.value-section .right-block img{
+  width:100%;
+  position:relative;
+  left:25%;
+
+}
+
+
+.value-section .right-block .before-box{
+  width:100px;
+  height:100px;
+  background-color:#ffb64d;
+  float:left;
+  transform:translate(35px,70px);
+}
+
+
+.value-section .right-block .after-box{
+  width:100px;
+  height:100px;
+  background-color:#ffb64d;
+  float:right;
+  transform:translate(96px,-69px);
+}
+  
+  
+/* center image section */
+
+.image-section .section-1 .row{
+  gap:30px;
+}
+
+.image-section .section-1 .col-md-6 h3 {
+  font-size: 40px;
+}
+
+.image-section .section-1 .col-md-6 p{
+  font-size: 15px;
+ 
+}
+  
+
+/*  /* ------end section in about page -------- */
+  
+section.end-section img{
+  width:150px;
+}
+
+.end-section h2{
+  font-size:50px;
+  letter-spacing:1px;
+  
+}
+.end-section >p{
+  font-size:16px;
+  margin-top:1px;
+}
+
+.end-section h3{
+  font-size:25px;
+  margin-bottom:50px;
+}
+
+
+.end-section .image-container p{
+  font-size:20px;
+  flex:1 0 100%;
+}
+
+}
+
+
+
 
