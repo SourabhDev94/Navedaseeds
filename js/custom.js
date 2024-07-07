@@ -108,4 +108,27 @@ $(document).ready(function() {
 
 
 
+  $(document).ready(function() {
+    // Show all cards initially
+    $('.cards').show();
+  
+    // Show/hide cards based on dropdown selection
+    $('#vegetable-select').change(function() {
+      var selectedOption = $(this).val();
+  
+      // Hide all cards first
+      $('.cards').hide();
+  
+      if (selectedOption === 'all') {
+        // Show all cards if 'Show All' is selected
+        $('.cards').show();
+      } else {
+        // Show cards based on selected option
+        $('.' + selectedOption).show();
+      }
+    });
+  });
+  
+
+
 

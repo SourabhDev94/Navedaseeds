@@ -4,7 +4,7 @@
 :root{
    --main-font:"League Spartan", sans-serif;
    --sub-font:"Poppins", sans-serif;
-   --primary-color:#FFB64D;
+   --primary-color:#FED700;
    --secondary-color:#116142;
 }
 
@@ -225,7 +225,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #ffb64d;;
+  color: #FED700;;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -414,7 +414,7 @@ a:focus {
 .slider_section .detail-box .btn-box .btn1 {
   display: inline-block;
   padding: 8px 15px;
-  background-color: #ffb64d;
+  background-color: #FED700;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all .3s;
@@ -465,7 +465,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #ffb64d;
+  background-color: #FED700;
 }
 
 .service_section {
@@ -1444,7 +1444,7 @@ a:focus {
 .value-section .right-block .before-box{
   width:200px;
   height:200px;
-  background-color:#ffb64d;
+  background-color:#FED700;
   float:left;
   transform:translate(178px,-37px);
 }
@@ -1457,7 +1457,7 @@ a:focus {
 .value-section .right-block .after-box{
   width:200px;
   height:200px;
-  background-color:#ffb64d;
+  background-color:#FED700;
   float:right;
   transform:translate(42px,-161px);
 }
@@ -1535,6 +1535,70 @@ content:"\2600";
 
 
 
+/* ---------------product page ------------------ */
+
+
+.product-dropdown{
+  text-align: center;
+  margin-top: 20px;;
+}
+
+#vegetable-select {
+  font-size: 16px; /* Adjust font size */
+  padding: 8px; /* Padding around the text */
+  border: 1px solid #ccc; /* Border around the dropdown */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #fff; /* Background color */
+  color: #333; /* Text color */
+  width: 300px; /* Width of the dropdown */
+
+}
+
+#vegetable-select:hover,
+#vegetable-select:focus {
+  border-color: var(--primary-color); /* Darker border color on hover/focus */
+}
+
+#vegetable-select option {
+  background-color: #fff; /* Background color of options */
+  color: #333; /* Text color of options */
+}
+
+#vegetable-select option:hover {
+  background-color: #f0f0f0; /* Background color of options on hover */
+}
+
+
+.product-section .cards .img-box{
+  flex:1 0 30%;
+}
+
+.product-section .cards ul{
+  padding-left:15px;
+  
+}
+
+.product-section .cards ul li{
+font-size:14px
+  
+}
+
+
+
+@media screen and (max-width:480px){
+  
+.product-section .cards .img-box{
+  flex:1 0 40%;
+}
+  .product-section .cards ul li{
+font-size:13px
+  
+}
+  
+  
+}
+
+
 
 /* --------------about page mobile view ---------- */
 
@@ -1579,7 +1643,7 @@ content:"\2600";
 .value-section .right-block .before-box{
   width:100px;
   height:100px;
-  background-color:#ffb64d;
+  background-color:#FED700;
   float:left;
   transform:translate(35px,70px);
 }
@@ -1588,7 +1652,7 @@ content:"\2600";
 .value-section .right-block .after-box{
   width:100px;
   height:100px;
-  background-color:#ffb64d;
+  background-color:#FED700;
   float:right;
   transform:translate(96px,-69px);
 }
