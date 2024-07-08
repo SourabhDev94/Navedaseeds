@@ -1583,15 +1583,36 @@ font-size:14px
   
 }
 
+.product-section .cards .box .detail-box{
+  padding:20px;
+    
+  }
+
+  .product-section .cards{
+   overflow:hidden;
+      
+    }
+
+  .product-section .cards .box{
+    height:100%;
+      
+    }
+
 
 
 @media screen and (max-width:480px){
   
 .product-section .cards .img-box{
-  flex:1 0 40%;
+  flex:1 0 35%;
 }
+
+.product-section .cards span{
+  font-size:12px
+    
+  }
+
   .product-section .cards ul li{
-font-size:13px
+font-size:11px
   
 }
   
