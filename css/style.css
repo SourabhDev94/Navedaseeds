@@ -479,7 +479,7 @@ a:focus {
   margin-top: 45px;
   background-color: var(--primary-color);
   /* padding: 20px; */
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .service_section .box .img-box {
@@ -1569,10 +1569,6 @@ content:"\2600";
 }
 
 
-.product-section .cards .img-box{
-  flex:1 0 30%;
-}
-
 .product-section .cards ul{
   padding-left:15px;
   
@@ -1583,8 +1579,13 @@ font-size:14px
   
 }
 
+.product-section .cards .img-box{
+  flex:1 0 30%;
+}
+
 .product-section .cards .box .detail-box{
   padding:20px;
+  flex:1 0 70%;
     
   }
 
