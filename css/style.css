@@ -1207,16 +1207,16 @@ a:focus {
 }
 
 
-:is(.homepage,.product) .service_section .box .img-box img.second-image {
+.homepage .service_section .box .img-box img.second-image {
   opacity: 0;
   transform: scale(1);
 }
 
-:is(.homepage,.product) .service_section .box .img-box:hover img.first-image {
+.homepage .service_section .box .img-box:hover img.first-image {
   opacity: 0;
 }
 
-:is(.homepage,.product) .service_section .box .img-box:hover img.second-image {
+.homepage .service_section .box .img-box:hover img.second-image {
   opacity: 1;
   transform: scale(1.1); /* Adjust scale effect as needed */   
 }
