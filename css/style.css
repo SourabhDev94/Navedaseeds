@@ -1232,7 +1232,7 @@ a:focus {
 /* -------homepage_end image css----- */
 .track_section{
   padding:150px 0;
-  margin-bottom:80px;
+  /* margin-bottom:80px; */
 }
 
 .track_section .track_bg_box::before{
@@ -1303,7 +1303,7 @@ a:focus {
    /* overlay text on hero image */
    .service_section .image-container .overlay-text{
     font-size:35px;
-    bottom:20%;
+    bottom:35%;
     line-height:40px;
 }
 
@@ -1319,7 +1319,7 @@ a:focus {
 /*     image box width */
      .service_section .box .img-box {
         margin: 0px;
-         flex:1 0 40%;
+         flex:1 0 35%;
          border-radius:5px 0px 0px 5px;
     }
     
@@ -1336,7 +1336,12 @@ a:focus {
  
 /*   detail box font size   */
     .service_section .box .detail-box p {
-       font-size:12px;
+       font-size:11px;
+}
+
+/*   detail box font size   */
+.service_section .box .detail-box p span{
+  font-size:11px;
 }
 
   .service_section.layout_padding .image-container img{
@@ -1348,8 +1353,13 @@ a:focus {
     }
 
     /* homepage > introduction */
-    .service_section .heading_container :is(p,span) {
-      font-size:14px;
+    .service_section .heading_container p {
+      font-size:13px;
+    }
+
+    .service_section .heading_container h2 {
+      font-size:23px;
+      /* align-self: center; */
     }
 
 
@@ -1359,16 +1369,21 @@ a:focus {
       .about_section .detail-box p {
          font-size:13px;
       }
+
+      .about_section .heading_container h2 {
+        font-size:23px;
+        /* align-self: center; */
+      }
       
    
   /*    homepage > end-image */
        .track_section {
           padding:60px 0px;
-          margin-bottom:50px;
+          /* margin-bottom:50px; */
       }
       
       .track_section h2{
-          font-size:35px;
+          font-size:30px;
           line-height:2.5rem;
       } 
       
@@ -1395,6 +1410,55 @@ a:focus {
           padding-left:30px;
           padding-right:30px;
       }
+      @media (max-width:480px){
+          
+          .info_section .widget-1{
+              margin-bottom:30px;   
+          }
+          .info_section .widget-1 img {
+              width:70px;
+              height:75px;
+          }
+          
+          .info_section .widget-1 .heading {
+              font-size:35px!important;
+          }
+          .info_section .widget-1 .sub-heading {
+              font-size:10px;
+          }
+          
+          .info_section .widget-2 p{
+              font-size:13px;
+              text-align:justify;
+          }
+          
+           .info_section .widget-3{
+              padding:0px 50px;
+          }
+          
+          .info_section .widget-3 a{
+             margin-bottom:10px;
+              font-size:15px;
+          } 
+          
+           .info_section .widget-4{
+              padding:0px 50px;
+          }
+          
+          .info_section .widget-4 a{
+             margin-bottom:10px;
+              font-size:15px;
+          }
+          
+          .footer_section p{
+              font-size:13px;
+          }
+          
+          
+          
+      }
+
+
   }
   
   
@@ -1576,27 +1640,27 @@ content:"\2600";
 }
 
 
-.product-section .cards ul{
+:is(.category-section, .product-section ) .cards ul{
   padding-left:15px;
   
 }
 
-.product-section .cards ul li{
+:is(.category-section, .product-section ) .cards ul li{
 font-size:14px
   
 }
 
-.product-section .cards .img-box{
+:is(.category-section, .product-section ) .cards .img-box{
   flex:1 0 30%;
 }
 
-.product-section .cards .box .detail-box{
+:is(.category-section, .product-section ) .cards .box .detail-box{
   padding:20px;
   flex:1 0 70%;
     
   }
 
-  .product-section .cards{
+  :is(.category-section, .product-section ) .cards{
    overflow:hidden;
       
     }
@@ -1606,22 +1670,30 @@ font-size:14px
       
     }
 
+  .homepage .cards .detail-box span{
+    font-size:20px!important;
+  }
+
 
 
 @media screen and (max-width:480px){
   
-.product-section .cards .img-box{
+:is(.category-section, .product-section ) .cards .img-box{
   flex:1 0 35%;
 }
 
-.product-section .cards span{
+:is(.category-section, .product-section ) .cards span{
   font-size:12px
     
   }
 
-  .product-section .cards ul li{
-font-size:11px
+  :is(.category-section, .product-section ) .cards ul li{
+  font-size:11px
   
+}
+
+.homepage .cards .detail-box span{
+  font-size:15px!important;
 }
   
   
@@ -1728,6 +1800,12 @@ section.end-section img{
 .end-section .image-container p{
   font-size:20px;
   flex:1 0 100%;
+}
+
+
+.contact_section {
+
+  padding-bottom:0px;
 }
 
 }
