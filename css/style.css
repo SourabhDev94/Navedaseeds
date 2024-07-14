@@ -228,6 +228,10 @@ a:focus {
   color: #FED700;;
 }
 
+.active {
+  color: #FED700;;
+}
+
 .custom_nav-container .nav_search-btn {
   width: 35px;
   height: 35px;
@@ -1560,7 +1564,7 @@ a:focus {
 /* end-section */
 section.end-section{
   text-align:center;
-  padding-bottom:50px;
+  /* padding-bottom:50px; */
 }
 
 .end-section h2{
