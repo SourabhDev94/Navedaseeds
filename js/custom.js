@@ -133,11 +133,29 @@ $(document).ready(function() {
 
   $(document).ready(function(){
     // Add active class to the current button (highlight it)
-    $(".nav-item .nav-link").click(function() {
-        $(".nav-item .nav-link").removeClass("active");
+    $("a.nav-link").click(function() {
+        $("a.nav-link").removeClass("active");
         $(this).addClass("active");
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var navbarLinks = document.querySelectorAll(".nav-link");
+
+    navbarLinks.forEach(function(link) {
+        link.addEventListener("click", function() {
+            // Remove active class from all links
+            navbarLinks.forEach(function(navLink) {
+                navLink.classList.remove("active");
+            });
+
+            // Add active class to the clicked link
+            this.classList.add("active");
+        });
+    });
+});
+
   
 
 
