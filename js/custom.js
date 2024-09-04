@@ -146,28 +146,28 @@ $(document).ready(function() {
 
   
 
-  function changeUrl(newUrl) {
-    window.history.pushState({ path: newUrl }, '', newUrl);
-}
+//   function changeUrl(newUrl) {
+//     window.history.pushState({ path: newUrl }, '', newUrl);
+// }
 
-  $(document).ready(function() {
-    // Example: change URL when clicking a button
+//   $(document).ready(function() {
+//     // Example: change URL when clicking a button
     
-    if (window.location.pathname === '/') {
-        changeUrl('/');
-    }
-     else if (window.location.pathname === '/index.html') {
-        changeUrl('/');
-    }else if (window.location.pathname === '/about.html') {
-        changeUrl('/about-us');
-    }
-    else if (window.location.pathname === '/contact.html') {
-        changeUrl('/contact-us');
-    }
-    else if (window.location.pathname === '/product.html') {
-        changeUrl('/product');
-    }
-});
+//     if (window.location.pathname === '/') {
+//         changeUrl('/');
+//     }
+//      else if (window.location.pathname === '/index.html') {
+//         changeUrl('/');
+//     }else if (window.location.pathname === '/about.html') {
+//         changeUrl('/about-us');
+//     }
+//     else if (window.location.pathname === '/contact.html') {
+//         changeUrl('/contact-us');
+//     }
+//     else if (window.location.pathname === '/product.html') {
+//         changeUrl('/product');
+//     }
+// });
 
 
   
