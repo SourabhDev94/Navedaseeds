@@ -490,7 +490,7 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 45px;
+  margin-top: 30px;
   background-color: var(--primary-color);
   /* padding: 20px; */
   /* border-radius: 5px; */
@@ -1066,6 +1066,24 @@ a:focus {
   display:block;
 }
 
+.download_btn{
+  border: 1px solid lightgray;
+  padding: 13px 5px;
+  border-radius: 5px;
+  position: relative;
+  bottom: 2px;
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width:480px){
+  .download_btn{
+   display: inline-block;
+    border-radius: 5px;
+    top: 5px;
+     padding: 5px;
+  }
+}
+
 
  /* @keyframes zoomOutLogo {
   0% {
@@ -1119,6 +1137,7 @@ a:focus {
   bottom:30%;
   line-height:100px;
   font-weight:400;
+  padding:0px 50px;
 }
 
 /* hero image black overlay  */

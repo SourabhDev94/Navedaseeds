@@ -1,12 +1,11 @@
   const navLinks = document.querySelectorAll(".nav-link");
-  const currentUrl = window.location.pathname;            
+  const currentUrl = window.location.pathname; 
+  
 
   navLinks.forEach(link => {
-        if (link.getAttribute("href") === currentUrl) {
-            link.style.color = "#fed700";  //
-        } else {
-            link.style.color = "#ffffff";  // Default color for non-active links
-      }
+        if ('/'+link.getAttribute("href") ===  currentUrl) {
+            link.style.color = "#fed700";  
+        } 
   });
 
 
@@ -156,18 +155,48 @@ $(document).ready(function() {
 //     if (window.location.pathname === '/') {
 //         changeUrl('/');
 //     }
-//      else if (window.location.pathname === '/index.html') {
+//      else if (window.location.pathname === 'index.html') {
 //         changeUrl('/');
-//     }else if (window.location.pathname === '/about.html') {
-//         changeUrl('/about-us');
+//     }else if (window.location.pathname === 'about.html') {
+//         changeUrl('/about');
 //     }
-//     else if (window.location.pathname === '/contact.html') {
+//     else if (window.location.pathname === 'contact.html') {
 //         changeUrl('/contact-us');
 //     }
-//     else if (window.location.pathname === '/product.html') {
+//     else if (window.location.pathname === 'product.html') {
 //         changeUrl('/product');
 //     }
 // });
+
+
+
+// hide the inspect menu from browser developer tools 
+// document.addEventListener('contextmenu', function(e) {
+//   e.preventDefault();
+// });
+// document.addEventListener('keydown', function(e) {
+//   // F12
+//   if (e.key === 'F12') {
+//       e.preventDefault();
+//   }
+//   // Ctrl+Shift+I
+//   if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+//       e.preventDefault();
+//   }
+//   // Ctrl+Shift+C (Inspect Element)
+//   if (e.ctrlKey && e.shiftKey && e.key === 'C') {
+//       e.preventDefault();
+//   }
+//   // Ctrl+Shift+J (Open Console)
+//   if (e.ctrlKey && e.shiftKey && e.key === 'J') {
+//       e.preventDefault();
+//   }
+// });
+
+
+
+
+
 
 
   
