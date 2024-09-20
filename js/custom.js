@@ -41,16 +41,6 @@ $(".owl-carousel").owlCarousel({
 
 
 
-/** google_map js **/
-function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(29.6803266, 76.9896254),
-        zoom: 15,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}
-
-
 //  -----------------Jquery-------------------------------------------- 
 // to get the reload logo Animation
 // $(document).ready(function() {
